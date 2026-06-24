@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B2A"/>
+      <stop offset="50%" style="stop-color:#123B5A"/>
+      <stop offset="100%" style="stop-color:#0D1B2A"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#123B5A"/>
+      <stop offset="50%" style="stop-color:#00B2B3"/>
+      <stop offset="100%" style="stop-color:#00D4D5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1100" cy="100" r="200" fill="#00B2B3" opacity="0.08"/>
+  <circle cx="100" cy="530" r="150" fill="#00B2B3" opacity="0.06"/>
+  <circle cx="900" cy="500" r="100" fill="#00B2B3" opacity="0.04"/>
+
+  <!-- ZS Monogram -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="140" font-weight="900" fill="url(#logoGrad)" text-anchor="middle">ZS</text>
+
+  <!-- ZIAS Text -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" fill="white" text-anchor="middle" letter-spacing="12" font-weight="700">ZIAS</text>
+
+  <!-- Tagline -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle" opacity="0.9">بسّط التزاماتك المالية بالحل الأنسب لك</text>
+
+  <!-- Features line -->
+  <rect x="400" y="410" width="400" height="2" rx="1" fill="#00B2B3" opacity="0.5"/>
+
+  <!-- Sub features -->
+  <text x="600" y="470" font-family="Arial, sans-serif" font-size="22" fill="white" text-anchor="middle" opacity="0.7">دمج الأقساط • إعادة الجدولة • تخفيض القسط</text>
+
+  <!-- Bottom badge -->
+  <rect x="440" y="510" width="320" height="44" rx="22" fill="#00B2B3"/>
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="600">متوافق مع أحكام الشريعة الإسلامية</text>
+</svg>

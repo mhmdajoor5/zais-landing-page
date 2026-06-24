@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً لك | Zias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(165deg, #F5F6F7 0%, #E6E9EC 100%);
+            padding: 20px;
+        }
+        .thank-you-card {
+            background: white;
+            border-radius: 24px;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 16px 48px rgba(13, 27, 42, 0.12);
+        }
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #00B2B3, #00D4D5);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.5s ease;
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0); }
+            to { transform: scale(1); }
+        }
+        .success-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+        }
+        h1 {
+            color: #0D1B2A;
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #6B7280;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #00B2B3, #00D4D5);
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 178, 179, 0.25);
+        }
+        .logo {
+            margin-top: 40px;
+            padding: 16px 24px;
+            background: #0D1B2A;
+            border-radius: 12px;
+            display: inline-block;
+        }
+        .logo img {
+            height: 40px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-card">
+        <div class="success-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h1>شكراً لتواصلك معنا!</h1>
+        <p>تم استلام طلبك بنجاح. سيتواصل معك أحد مستشارينا خلال 24 ساعة لدراسة وضعك المالي وتقديم الحل الأنسب لك.</p>
+        <a href="index.html" class="btn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            العودة للرئيسية
+        </a>
+        <div class="logo">
+            <img src="images/logo.png" alt="Zias" onerror="this.onerror=null; this.src='images/logo.svg';">
+        </div>
+    </div>
+</body>
+</html>

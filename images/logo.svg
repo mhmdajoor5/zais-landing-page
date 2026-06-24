@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 325" width="300" height="325" role="img" aria-label="Zias logo">
+  <title>Zias Logo</title>
+  <desc>Zias ZS monogram logo with gradient from navy to teal</desc>
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#123B5A"/>
+      <stop offset="50%" style="stop-color:#00B2B3"/>
+      <stop offset="100%" style="stop-color:#00D4D5"/>
+    </linearGradient>
+  </defs>
+  <!-- Placeholder - Replace with actual vector ZS monogram -->
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="140" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle">ZS</text>
+  <text x="150" y="290" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#0D1B2A" text-anchor="middle" letter-spacing="16">ZIAS</text>
+</svg>
