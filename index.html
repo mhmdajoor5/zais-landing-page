@@ -265,6 +265,32 @@
     </section>
 
     <!-- =========================================
+         COMPLIANCE SECTION
+         ========================================= -->
+    <section class="compliance-section" aria-label="اعتمادات وثقة ZIAS">
+        <div class="container">
+            <div class="compliance-card">
+                <div class="compliance-item">
+                    <div class="compliance-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2l7 3.12v5.32c0 4.42-2.86 8.54-7 10.03-4.14-1.49-7-5.61-7-10.03V5.12L12 2z"/>
+                            <path d="M9.1 12.2l1.78 1.78 4.02-4.02" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="compliance-text">معتمدة من اللجنة الشرعية</span>
+                </div>
+                <div class="compliance-divider" aria-hidden="true"></div>
+                <div class="compliance-item">
+                    <div class="compliance-logo-wrap" aria-hidden="true">
+                        <img src="images/sama-logo.png" alt="" class="compliance-logo">
+                    </div>
+                    <span class="compliance-text">خاضعة لرقابة وإشراف البنك المركزي السعودي</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
          HOW IT WORKS SECTION
          ========================================= -->
     <section class="section how-it-works" id="how-it-works">
@@ -955,6 +981,47 @@
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
+    <!-- Floating AI Chat Assistant -->
+    <div class="ai-chat-widget" id="aiChatWidget" dir="rtl">
+        <button class="ai-chat-toggle" id="aiChatToggle" type="button" aria-label="فتح مساعد ZIAS الذكي" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l1.22 5.03L18 8.25l-4.78 1.22L12 14.5l-1.22-5.03L6 8.25l4.78-1.22L12 2zm6.25 9.5l.73 3.02L22 15.25l-3.02.73-.73 3.02-.73-3.02-3.02-.73 3.02-.73.73-3.02zM5.75 12.5l.73 3.02 3.02.73-3.02.73-.73 3.02-.73-3.02L2 16.25l3.02-.73.73-3.02z"/>
+            </svg>
+        </button>
+
+        <section class="ai-chat-panel" id="aiChatPanel" aria-labelledby="aiChatTitle" aria-hidden="true">
+            <div class="ai-chat-header">
+                <div>
+                    <h3 id="aiChatTitle">مساعد ZIAS الذكي</h3>
+                    <p>اسألني عن التمويل، طريقة التقديم، الشروط، أو الأسئلة الشائعة</p>
+                </div>
+                <button class="ai-chat-close" id="aiChatClose" type="button" aria-label="إغلاق مساعد ZIAS الذكي">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71L12 12l6.3 6.29-1.41 1.41L10.59 13.41 4.29 19.7 2.88 18.29 9.17 12 2.88 5.71 4.29 4.3l6.3 6.29 6.3-6.29 1.41 1.41z"/></svg>
+                </button>
+            </div>
+
+            <div class="ai-chat-messages" id="aiChatMessages" aria-live="polite">
+                <div class="ai-chat-message ai-chat-message-bot">
+                    أهلاً بك في ZIAS. أقدر أساعدك في معرفة طريقة التقديم، الشروط، حاسبة الأهلية، التوافق الشرعي، أو طرق التواصل.
+                </div>
+            </div>
+
+            <div class="ai-chat-chips" aria-label="أسئلة مقترحة">
+                <button class="ai-chat-chip" type="button" data-chat-question="كيف أقدم؟">كيف أقدم؟</button>
+                <button class="ai-chat-chip" type="button" data-chat-action="calculator">احسب أهليتي</button>
+                <button class="ai-chat-chip" type="button" data-chat-question="هل الخدمة شرعية؟">هل الخدمة شرعية؟</button>
+                <button class="ai-chat-chip" type="button" data-chat-action="whatsapp">تواصل عبر واتساب</button>
+            </div>
+
+            <form class="ai-chat-form" id="aiChatForm">
+                <input class="ai-chat-input" id="aiChatInput" type="text" placeholder="اكتب سؤالك هنا..." autocomplete="off" aria-label="رسالة إلى مساعد ZIAS الذكي">
+                <button class="ai-chat-send" type="submit" aria-label="إرسال">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+                </button>
+            </form>
+        </section>
+    </div>
+
     <!-- =========================================
          JAVASCRIPT
          ========================================= -->
@@ -1108,6 +1175,172 @@
             result.classList.add('show');
             result.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
+
+        // AI Chat FAQ Assistant
+        (function initAiChatAssistant() {
+            const widget = document.getElementById('aiChatWidget');
+            const toggle = document.getElementById('aiChatToggle');
+            const panel = document.getElementById('aiChatPanel');
+            const close = document.getElementById('aiChatClose');
+            const messages = document.getElementById('aiChatMessages');
+            const form = document.getElementById('aiChatForm');
+            const input = document.getElementById('aiChatInput');
+            const chips = document.querySelectorAll('.ai-chat-chip');
+            const fallbackAnswer = 'أقدر أساعدك أكثر عن طريق فريق ZIAS. تقدر تتواصل معنا عبر الواتساب أو تترك بياناتك وسيتم التواصل معك.';
+            const whatsappLink = document.querySelector('a[href*="wa.me"]')?.href || 'https://wa.me/966920000000';
+
+            if (!widget || !toggle || !panel || !close || !messages || !form || !input) return;
+
+            const faqAnswers = [
+                {
+                    keywords: ['ما هي zias', 'ما هي زياس', 'من هي zias', 'من هي زياس', 'zias'],
+                    answer: 'ZIAS منصة حلول مالية سعودية تساعدك في دمج القروض وتوحيد الأقساط في تمويل واحد وقسط شهري أوضح، مع تجربة رقمية مبسطة ومتابعة من مستشارين متخصصين.'
+                },
+                {
+                    keywords: ['كيف اقدم', 'كيف أقدم', 'طريقة التقديم', 'التقديم', 'ابغى اقدم', 'أبغى أقدم'],
+                    answer: 'طريقة التقديم سهلة: ابدأ بحاسبة الأهلية، أدخل بياناتك الأساسية، ثم اترك معلومات التواصل. بعد ذلك يراجع فريق ZIAS ملفك ويتواصل معك المستشار المناسب لاستكمال الخطوات.'
+                },
+                {
+                    keywords: ['كم تستغرق', 'مدة المعاملة', 'وقت المعاملة', 'متى تخلص', 'كم يوم'],
+                    answer: 'تبدأ المراجعة بعد إرسال بياناتك، ويتواصل معك أحد المستشارين لمتابعة الطلب. مدة المعاملة تختلف حسب اكتمال البيانات وجهة التمويل، لكن هدفنا تسهيل الإجراءات وتسريعها قدر الإمكان.'
+                },
+                {
+                    keywords: ['الشريعة', 'شرعية', 'اسلامية', 'إسلامية', 'متوافق'],
+                    answer: 'نعم، منتجات التمويل المقدمة عبر ZIAS متوافقة مع أحكام الشريعة الإسلامية ومعتمدة من الهيئات الشرعية لدى شركات التمويل الشريكة.'
+                },
+                {
+                    keywords: ['رقابة', 'مرخص', 'تخضعون', 'موثوق', 'آمنة', 'امنة'],
+                    answer: 'ZIAS تركز على الشفافية وحماية بيانات العملاء، وتتعامل مع جهات تمويل شريكة وفق متطلبات السوق السعودي. بياناتك يتم التعامل معها بسرية ولا تستخدم إلا لمتابعة طلبك.'
+                },
+                {
+                    keywords: ['احسب اهليتي', 'احسب أهليتي', 'حاسبة', 'الأهلية', 'اهليتي', 'أهليتي'],
+                    answer: 'تقدر تستخدم حاسبة الأهلية في الموقع بإدخال الدخل الشهري، مجموع الأقساط، وعدد القروض للحصول على نتيجة مبدئية فورية. النتيجة تقديرية وتخضع للمراجعة النهائية.'
+                },
+                {
+                    keywords: ['اتواصل', 'أتواصل', 'تواصل', 'رقم', 'اتصال', 'الجوال'],
+                    answer: 'يمكنك التواصل مع ZIAS عبر نموذج التواصل في الموقع، أو عبر واتساب، أو الاتصال على الرقم الموضح في قسم التواصل.'
+                },
+                {
+                    keywords: ['الشروط', 'شروط', 'متطلبات', 'المتطلبات'],
+                    answer: 'شروط الأهلية المبدئية تشمل أن تكون مواطناً سعودياً أو مقيماً، لديك دخل شهري ثابت، ولديك التزامان ماليان أو أكثر. استخدم حاسبة الأهلية لمعرفة نتيجة أولية.'
+                },
+                {
+                    keywords: ['واتساب', 'whatsapp', 'واتس'],
+                    answer: 'نعم، يوجد تواصل عبر واتساب. اضغط على زر واتساب في الموقع أو اختر "تواصل عبر واتساب" من الاقتراحات لفتح المحادثة مباشرة.'
+                }
+            ];
+
+            function normalizeArabic(text) {
+                return text
+                    .toLowerCase()
+                    .replace(/[أإآ]/g, 'ا')
+                    .replace(/ة/g, 'ه')
+                    .replace(/ى/g, 'ي')
+                    .replace(/[^\u0600-\u06FFa-z0-9\s]/g, ' ')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+            }
+
+            function toggleChat(forceOpen) {
+                const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : !widget.classList.contains('active');
+                widget.classList.toggle('active', shouldOpen);
+                toggle.setAttribute('aria-expanded', String(shouldOpen));
+                panel.setAttribute('aria-hidden', String(!shouldOpen));
+                if (shouldOpen) setTimeout(() => input.focus(), 180);
+            }
+
+            function addMessage(text, type) {
+                const message = document.createElement('div');
+                message.className = 'ai-chat-message ai-chat-message-' + type;
+                message.textContent = text;
+                messages.appendChild(message);
+                messages.scrollTop = messages.scrollHeight;
+                return message;
+            }
+
+            function addTypingMessage() {
+                const message = document.createElement('div');
+                message.className = 'ai-chat-message ai-chat-message-bot';
+                message.innerHTML = '<span class="ai-chat-typing" aria-label="جاري كتابة الرد"><span></span><span></span><span></span></span>';
+                messages.appendChild(message);
+                messages.scrollTop = messages.scrollHeight;
+                return message;
+            }
+
+            function getAnswer(question) {
+                const normalizedQuestion = normalizeArabic(question);
+                const match = faqAnswers.find(item =>
+                    item.keywords.some(keyword => normalizedQuestion.includes(normalizeArabic(keyword)))
+                );
+                return match ? match.answer : fallbackAnswer;
+            }
+
+            function respondToQuestion(question) {
+                const cleanQuestion = question.trim();
+                if (!cleanQuestion) return;
+
+                addMessage(cleanQuestion, 'user');
+                input.value = '';
+                const typing = addTypingMessage();
+
+                setTimeout(() => {
+                    typing.textContent = getAnswer(cleanQuestion);
+                    messages.scrollTop = messages.scrollHeight;
+                }, 650);
+
+                // Future real AI integration should call a secure backend endpoint such as /api/chat.
+                // Do not call OpenAI or expose API keys directly from browser JavaScript.
+            }
+
+            function scrollToSection(selector) {
+                const target = document.querySelector(selector);
+                if (!target) {
+                    addMessage(fallbackAnswer, 'bot');
+                    return;
+                }
+
+                const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+                window.scrollTo({ top: target.offsetTop - headerHeight, behavior: 'smooth' });
+            }
+
+            toggle.addEventListener('click', () => toggleChat());
+            close.addEventListener('click', () => toggleChat(false));
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                respondToQuestion(input.value);
+            });
+
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    respondToQuestion(input.value);
+                }
+            });
+
+            chips.forEach(chip => {
+                chip.addEventListener('click', () => {
+                    const action = chip.getAttribute('data-chat-action');
+                    const question = chip.getAttribute('data-chat-question') || chip.textContent;
+
+                    toggleChat(true);
+
+                    if (action === 'calculator') {
+                        respondToQuestion('احسب أهليتي');
+                        scrollToSection('#calculator');
+                        return;
+                    }
+
+                    if (action === 'whatsapp') {
+                        respondToQuestion('هل يوجد واتساب؟');
+                        window.open(whatsappLink, '_blank', 'noopener');
+                        return;
+                    }
+
+                    respondToQuestion(question);
+                });
+            });
+        })();
 
         // Contact Form
         document.getElementById('contactForm').addEventListener('submit', async function(e) {
